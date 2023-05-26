@@ -15,7 +15,8 @@ def greeting():
 
 @app.route("/calculator/add", methods=['POST'])
 def add():
-    return '1'
+    response = Result(1)
+    return jsonify(response)
 
 @app.route("/calculator/subtract", methods=['POST'])
 def subtract():
